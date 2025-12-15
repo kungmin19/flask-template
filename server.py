@@ -31,9 +31,9 @@ def sport():
     title = 'My Faverite Sport'
     sport = ['basketball', 'baseball', 'badminton', 'swimming']
     return render_template('sport.html',
-                           title=title,
-                            sport=sport)
-
+                           sport=sport,
+                            title=title)  
+  
 @app.route('/greeting/<username>')
 def wellcome(username):
     title = 'Wellcome Page'

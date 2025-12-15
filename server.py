@@ -8,9 +8,9 @@ def index():
 
 @app.route('/about')
 def about():
-    title = 'About Me',
-    name='John Doe',
-    email='Std67122420124',
+    title = 'About Me'
+    name='John Doe'
+    email='Std67122420124'
     Phone='123-456-7890'
     return render_template('about.html',
                     title=title,

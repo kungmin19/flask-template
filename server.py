@@ -26,11 +26,11 @@ def faverite_song():
                             song=song,
                             title=title)
 
-@app.route('/faverite_sport/sport')
-def faverite_sport():
+@app.route('/sport')
+def sport():
     title = 'My Faverite Sport'
     sport = ['basketball', 'baseball', 'badminton', 'swimming']
-    return render_template('faverite_sport.html',
+    return render_template('sport.html',
                            title=title,
                             sport=sport)
 

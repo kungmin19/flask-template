@@ -27,10 +27,10 @@ def faverite_song():
                             title=title)
 
 @app.route('/sport')
-def sport():
+def sports():
     title = 'My Faverite Sport'
     sport = ['basketball', 'baseball', 'badminton', 'swimming']
-    return render_template('sport.html',
+    return render_template('sports.html',
                            sport=sport,
                             title=title)  
   
@@ -40,3 +40,11 @@ def wellcome(username):
     return render_template('wellcome.html',
                             username=username,
                             title=title)
+
+@app.route('/movies')
+def movies():
+    title='Favorite Movies Page'
+    movies = ['ไททานิค','2012วันสิ้นโลก','BADBOY','จูแมนจี้','กำเเพงมรณะ']
+    return render_template('movies.html',
+                           title=title,
+                            movies=movies,)

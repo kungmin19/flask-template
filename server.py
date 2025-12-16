@@ -30,7 +30,7 @@ def faverite_song():
 def sport():
     title = 'My Faverite Sport'
     sport = ['basketball', 'baseball', 'badminton', 'swimming']
-    return render_template('sports.html',
+    return render_template('sport.html',
                            sport=sport,
                             title=title)  
   

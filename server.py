@@ -27,7 +27,7 @@ def faverite_song():
                             title=title)
 
 @app.route('/sport')
-def sports():
+def sport():
     title = 'My Faverite Sport'
     sport = ['basketball', 'baseball', 'badminton', 'swimming']
     return render_template('sports.html',
